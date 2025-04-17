@@ -1,7 +1,5 @@
-// Example usage in app/page.tsx (App Router)
 import SimpleSlider from "@/components/SimpleSlider"; // Adjust path if needed
 
-// Sample data matching the SliderItem interface
 const sliderData = [
   {
     id: 1,
@@ -60,14 +58,13 @@ const sliderData = [
 
 export default function SliderSection() {
   return (
-    <section className="flex flex-col justify-between w-full py-24 px-96 bg-[#0d1018] border-b border-[#3f465f]">
+    <section className="flex flex-col justify-between w-screen py-24 px-10 lg:px-96 bg-[#0d1018] border-b border-[#3f465f]">
       <div className="w-full">
         <h1 className="text-3xl font-bold text-center mb-8 ">
           Nuestros Servicios
         </h1>
         <SimpleSlider items={sliderData} />
       </div>
-      {/* Other page content */}
     </section>
   );
 }
