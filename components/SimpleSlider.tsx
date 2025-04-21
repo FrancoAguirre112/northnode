@@ -46,7 +46,7 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ items }) => {
             key={item.id}
             className="flex !h-auto border border-blue-600 shadow-md"
           >
-            <div className="p-8 gap-3 rounded-lg flex flex-col justify-start text-sm h-full">
+            <div className="p-8 px-10 gap-3 rounded-lg flex flex-col justify-start text-sm h-full">
               <h2 className="text-lg text-center font-semibold text-white">
                 {item.titleLine1}
               </h2>
