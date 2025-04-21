@@ -31,11 +31,11 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ items }) => {
         pagination={{ clickable: true }}
         loop={true}
         breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
           1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1400: {
             slidesPerView: 3,
             spaceBetween: 30,
           },
@@ -44,14 +44,14 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ items }) => {
         {items.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="pb-10 flex justify-center items-center"
+            className="flex !h-auto border border-blue-600 shadow-md"
           >
-            <div className="border border-blue-600 p-6 gap-3 rounded-lg shadow-md h-48 flex flex-col items-center justify-between text-sm">
+            <div className="p-8 gap-3 rounded-lg flex flex-col justify-start text-sm h-full">
               <h2 className="text-lg text-center font-semibold text-white">
                 {item.titleLine1}
               </h2>
-              <div className="text-gray-400 text-center flex-grow">
-                {item.description}
+              <div className="text-gray-400 text-center flex items-center justify-center">
+                <div className="text-center">{item.description}</div>
               </div>
             </div>
           </SwiperSlide>

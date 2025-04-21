@@ -2,18 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react"; // Import useState
+import { useState } from "react";
 
 export const Navbar = () => {
-  // State to manage mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Function to close the menu (useful for links)
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -28,7 +25,7 @@ export const Navbar = () => {
           <ul className="hidden md:flex gap-2 items-center ">
             <li>
               <Link
-                className="hover:scale-110 px-4 inline-block transition-transform duration-200 ease-in-out" // Adjusted hover effect
+                className="hover:scale-110 px-4 inline-block transition-transform duration-200 ease-in-out"
                 href="/"
               >
                 Inicio
@@ -36,7 +33,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                className="hover:scale-110 px-4 inline-block transition-transform duration-200 ease-in-out" // Adjusted hover effect
+                className="hover:scale-110 px-4 inline-block transition-transform duration-200 ease-in-out"
                 href="/nosotros"
               >
                 Nosotros
@@ -46,16 +43,16 @@ export const Navbar = () => {
 
           {/* Mobile nav Hamburger Button */}
           <button
-            className="md:hidden p-2 -ml-2" // Added padding for easier clicking, negative margin to align visually
-            onClick={toggleMobileMenu} // Add onClick handler
-            aria-label="Toggle mobile menu" // Accessibility
-            aria-expanded={isMobileMenuOpen} // Accessibility
-            aria-controls="mobile-menu-dialog" // Accessibility
+            className="md:hidden p-2 -ml-2" 
+            onClick={toggleMobileMenu} 
+            aria-label="Toggle mobile menu" 
+            aria-expanded={isMobileMenuOpen} 
+            aria-controls="mobile-menu-dialog" 
           >
             <Image
               src={"/assets/icons/hamburger-menu.svg"}
               alt="Open Menu"
-              width={32} // Slightly smaller for better fit with padding
+              width={32}
               height={32}
               className="h-8 w-auto hover:cursor-pointer"
             />
@@ -64,15 +61,15 @@ export const Navbar = () => {
 
         {/* Logo */}
         <section>
-          {/* Make logo a link to home */}
+
           <Link href="/" aria-label="Go to homepage">
             <Image
               src={"/assets/icons/northnodeLogo.svg"}
               alt="North Node Logo"
               width={80}
               height={80}
-              className="h-26 w-auto" // Keep existing size
-              priority // Prioritize loading logo LCP
+              className="h-26 w-auto"
+              priority
             />
           </Link>
         </section>
