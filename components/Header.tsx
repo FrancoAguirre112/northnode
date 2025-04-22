@@ -17,8 +17,8 @@ export const Header = () => {
             alt="Header"
             className="w-auto"
           />
-          <h1 className="text-3xl md:text-5xl text-white text-center">
-            ASTROLOGY MEETS FINANCE
+          <h1 className="text-3xl md:text-5xl text-white text-center font-machina font-bold">
+            Astrology Meets Finance
           </h1>
         </section>
 
