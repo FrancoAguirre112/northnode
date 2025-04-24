@@ -14,11 +14,15 @@ const nosotros = () => {
         <h1 className="text-3xl md:text-5xl text-white text-center">
           Nosotros
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est
-          minima architecto nam, ipsam quaerat nobis soluta, excepturi sunt
-          sapiente nulla voluptates accusantium maxime recusandae illo suscipit,
-          dolore quisquam expedita!
+        <p className="text-xl font-medium">
+          La empresa nace de más de 20 años de experiencia en el sistema
+          financiero, identificando necesidades de empresas medianas y pequeñas
+          que buscan optimizar su rentabilidad. Se distingue por integrar
+          estrategias financieras con astrología aplicada, una herramienta
+          innovadora en la toma de decisiones estratégicas. Además, cuenta con
+          un equipo multidisciplinario altamente capacitado para ofrecer
+          asesoramiento integral en áreas clave como finanzas, legales,
+          marketing y sostenibilidad
         </p>
       </div>
     </section>
