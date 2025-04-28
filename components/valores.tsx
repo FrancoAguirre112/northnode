@@ -2,7 +2,7 @@ import React from "react"; // Optional: Import React if not implicitly available
 
 const Valores = () => {
   return (
-    <section className="flex flex-col 2xl:flex-row justify-between w-screen py-24 px-10 2xl:px-96 bg-[#0d1018] border-b border-[#3f465f] gap-12 md:gap-8">
+    <section className="flex flex-col 2xl:flex-row justify-between w-screen py-24 px-10 2xl:px-96 bg-[#0d1018] gap-12 md:gap-8">
       {/* Heading Section */}
       <div className="font-machina font-bold text-3xl md:text-8xl flex items-center">
         <h2 className="border-l md:pl-4 pl-2 line-clamp-2">

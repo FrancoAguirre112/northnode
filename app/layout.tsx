@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${neueMachina.variable} antialiased w-screen overflow-x-hidden h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${neueMachina.variable} antialiased w-screen overflow-x-hidden h-screen bg-[#0d1018]`}
       >
         <Navbar />
         {children}

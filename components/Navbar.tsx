@@ -21,7 +21,7 @@ export const Navbar = () => {
       {/* Use Fragment to wrap nav and dialog */}
       <nav className="flex justify-between items-center z-50 px-8 h-20 sticky top-0 bg-[#121620]">
         {/* Nav links */}
-        <section className="flex gap-10 w-60">
+        <section className="flex gap-10 w-90">
           {/* Desktop nav */}
           <ul className="hidden md:flex gap-2 items-center ">
             <li>
@@ -38,6 +38,14 @@ export const Navbar = () => {
                 href="/nosotros"
               >
                 Nosotros
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:scale-110 px-4 inline-block transition-transform duration-200 ease-in-out"
+                href="/valores"
+              >
+                Nuestros Valores
               </Link>
             </li>
           </ul>
@@ -75,7 +83,7 @@ export const Navbar = () => {
         </section>
 
         {/* Fake Login / User Icon */}
-        <section className="w-60 flex justify-end">
+        <section className="w-90 flex justify-end">
           <Login />
         </section>
       </nav>
@@ -132,7 +140,15 @@ export const Navbar = () => {
                 Nosotros
               </Link>
             </li>
-            {/* Add other links if needed */}
+            <li>
+              <Link
+                className="hover:opacity-80 px-4 py-2 inline-block transition-opacity"
+                href="/valores"
+                onClick={closeMobileMenu} // Close menu on link click
+              >
+                Nuestros Valores
+              </Link>
+            </li>
           </ul>
 
           {/* Optional Footer in Dialog (e.g., social links, duplicate user icon) */}
