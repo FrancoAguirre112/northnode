@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Login from "./Login";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,11 +44,11 @@ export const Navbar = () => {
 
           {/* Mobile nav Hamburger Button */}
           <button
-            className="md:hidden p-2 -ml-2" 
-            onClick={toggleMobileMenu} 
-            aria-label="Toggle mobile menu" 
-            aria-expanded={isMobileMenuOpen} 
-            aria-controls="mobile-menu-dialog" 
+            className="md:hidden p-2 -ml-2"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu-dialog"
           >
             <Image
               src={"/assets/icons/hamburger-menu.svg"}
@@ -61,7 +62,6 @@ export const Navbar = () => {
 
         {/* Logo */}
         <section>
-
           <Link href="/" aria-label="Go to homepage">
             <Image
               src={"/assets/icons/northnodeLogo.svg"}
@@ -76,15 +76,7 @@ export const Navbar = () => {
 
         {/* Fake Login / User Icon */}
         <section className="w-60 flex justify-end">
-          <button className="p-1" aria-label="User profile or login">
-            <Image
-              src={"/assets/icons/user.svg"}
-              alt="User Account"
-              width={32} // Adjusted size
-              height={32}
-              className="h-8 w-auto hover:scale-110 hover:cursor-pointer transition-transform duration-200 ease-in-out" // Adjusted size and hover
-            />
-          </button>
+          <Login />
         </section>
       </nav>
       {/* Mobile Menu Dialog */}
@@ -108,10 +100,7 @@ export const Navbar = () => {
             >
               Mobile Menu
             </h2>
-            <button
-              onClick={toggleMobileMenu}
-              aria-label="Close mobile menu"
-            >
+            <button onClick={toggleMobileMenu} aria-label="Close mobile menu">
               <Image
                 src={"/assets/icons/close.svg"}
                 alt="Close Menu"
