@@ -36,7 +36,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NORTHNODE (WEB DE PRUEBA)",
+  title: "NORTHNODE",
   description: "Astrology meets finance",
 };
 
